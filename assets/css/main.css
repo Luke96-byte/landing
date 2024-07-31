@@ -1,0 +1,157 @@
+body{
+    cursor: none; /* 기본 마우스 커서를 숨깁니다 */
+}
+#main{
+    background-color: #000;
+    margin-top: 100px;
+}
+#main .inner{
+    padding: 0 10px;
+}
+
+.sc-intro{
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+    /* border-top: 1px solid #fff; */
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+.sc-intro .left{
+    width: 50%;
+    overflow: hidden;
+}
+
+.sc-intro .word {
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    font-size: 200px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.sc-intro .word .char {
+    line-height: 0.8;
+    letter-spacing: -0.04em;
+    /* opacity: 0;
+    transform: translateY(20px);
+    animation: appear 2s forwards;
+    transition: 0.2s; */
+}
+.sc-intro .word .char:hover{
+    /* text-shadow: 2px 2px 4px #ccc; */
+}
+.sc-intro .right .line{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* @keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+.sc-projects{}
+.sc-projects .container{}
+.sc-projects .container .pro-list{
+    color: #fff;
+}
+.sc-projects .container .pro-item{
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+}
+.sc-projects .container .pro-item:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+.sc-projects .container .pro-item:nth-of-type(even) .title{
+    text-align: right;
+}
+.sc-projects .container .pro-item .text-area{
+    width: 50%;
+}
+.sc-projects .container .pro-item .text-area a{
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    
+}
+/* .sc-projects .container .pro-item .text-area a .ic-tag{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    margin-left: 1px;
+    padding: 5px 15px 5px 15px;
+} */
+.sc-projects .container .pro-item .text-area a .title:hover{
+    text-shadow: 1px 1px 2px #ccc;
+}
+.sc-projects .container .pro-item .text-area a .title{
+    font-size: 3.2vw;
+}
+.sc-projects .container .pro-item .img-area{
+    /* background-image: url('https://arcr.ru/media/2024/06/EMP2024.jpg');
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover; */
+    /* height: 50vh; */
+    width: 50%;
+    overflow: hidden;
+}
+.sc-projects .container .pro-item .img-area img{
+   
+}
+.sc-projects .container .pro-item .img-area:hover img{
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+.sc-projects ul li{
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+.sc-etc{
+    color: #fff;
+    padding: 30px 0;
+    /* border-bottom: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sc-etc .left{}
+.sc-etc .left .line{
+    overflow: hidden;
+    display: flex;
+}
+.sc-etc .left p{
+    font-size: 0.9vw;
+    line-height: 1;
+}
+.sc-etc .right{
+}
+.sc-etc .right .word{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 200px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.sc-etc .right .word .char{
+    line-height: 1;
+    letter-spacing: -0.04em;
+ 
+}
